@@ -18,10 +18,7 @@
   <img src="https://github.com/user-attachments/assets/6691ffbe-f2ee-4232-9ecc-1b98a92d08c6" width="30%" alt="Image 3">
 </p>
 
-<p align="center" style="margin-bottom: 20px;">
-  <img src="https://github.com/user-attachments/assets/efbd7ac7-7b1b-412f-8599-90224200b0b0" width="30%" alt="Image 2">
-  <img src="https://github.com/user-attachments/assets/4dcdf74b-58b8-49e2-97eb-a32041e044f0" width="30%" alt="Image 1">
-</p>
+
 
 About App:
 QuizWiz is an online quiz app developed by Ritesh using the Open Trivia DB API. It features over 7,000 trivia questions, allowing users to compete for leaderboard positions by scoring high. The app provides a highly customizable quiz experience, enabling players to choose from 20+ categories, 2 question types (multiple choice or true/false), and 3 difficulty levels (easy, medium, hard).
