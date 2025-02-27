@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/leader_board_bg"
+    tools:context=".activities.LeaderBoardActivity">
+
+    <TextView
+        android:id="@+id/tvLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Leaderboard"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/radio_group_bg"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvLeaderboard">
+
+        <RadioButton
+            android:id="@+id/rbAllTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="All time"
+            android:textColor="@drawable/radio_group_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbWeekly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="This weak"
+            android:textColor="@drawable/radio_group_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:checked="false"
+            />
+
+        <RadioButton
+            android:id="@+id/rbMonthly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Month"
+            android:textColor="@drawable/radio_group_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:checked="false"
+            />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/supportView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_rank2"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            app:cardBackgroundColor="@color/blue2"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivRank2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:elevation="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintEnd_toEndOf="@id/cv_rank2"
+            app:layout_constraintStart_toStartOf="@id/cv_rank2"
+            app:layout_constraintTop_toTopOf="@id/cv_rank1"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <LinearLayout
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/ivRank2"
+            app:layout_constraintStart_toStartOf="@id/ivRank2"
+            app:layout_constraintTop_toBottomOf="@id/ivRank2">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@drawable/circular_bg"
+                android:text="2"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tvRank2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/tvRank2Points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="123.4" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_rank1"
+            android:layout_width="110dp"
+            android:layout_height="190dp"
+            app:cardBackgroundColor="@color/blue3"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivRank1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:elevation="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintBottom_toTopOf="@id/cv_rank2"
+            app:layout_constraintEnd_toEndOf="@id/cv_rank1"
+            app:layout_constraintStart_toStartOf="@id/cv_rank1"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <LinearLayout
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@id/ivRank1"
+            app:layout_constraintStart_toStartOf="@id/ivRank1"
+            app:layout_constraintTop_toBottomOf="@id/ivRank1">
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:background="@drawable/circular_bg"
+                android:text="1"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/tvRank1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/tvRank1Points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="123.4" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_rank3"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            app:cardBackgroundColor="@color/blue2"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivRank3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:elevation="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintEnd_toEndOf="@id/cv_rank3"
+            app:layout_constraintStart_toStartOf="@id/cv_rank3"
+            app:layout_constraintTop_toTopOf="@id/cv_rank1"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <LinearLayout
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@id/ivRank3"
+            app:layout_constraintStart_toStartOf="@id/ivRank3"
+            app:layout_constraintTop_toBottomOf="@id/ivRank3">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@drawable/circular_bg"
+                android:text="3"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tvRank3Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/tvRank3Points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="123.4" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/supportView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="@id/view1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaderBoard_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/supportView"
+        tools:listitem="@layout/leader_board_item" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="760dp"
+        android:layout_height="500dp"
+        android:background="@drawable/convex_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

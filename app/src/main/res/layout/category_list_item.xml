@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/category_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iv_category_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:elevation="10dp"
+        android:src="@drawable/sport"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/category_CardView"
+        />
+
+    <TextView
+        android:id="@+id/tv_Category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Sports"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/iv_category_icon"
+        app:layout_constraintStart_toStartOf="@id/category_CardView"
+        app:layout_constraintBottom_toTopOf="@id/tv_no_of_questions"
+        />
+    <TextView
+        android:id="@+id/tv_no_of_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_marginStart="20dp"
+        android:text="53 questions"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_Category_name"
+        app:layout_constraintStart_toStartOf="@id/category_CardView"
+        app:layout_constraintBottom_toBottomOf="@id/category_CardView"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

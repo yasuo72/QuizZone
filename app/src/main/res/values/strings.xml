@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuizWiz</string>
+    <string name="amount">Amount: 10 </string>
+    <string name="category">Category: </string>
+    <string name="difficulty">Difficulty: </string>
+    <string name="type">Type: </string>
+    <string name="sampleQuestion">What is the value of universal gravitation Constant?</string>
+    <string name="questionInfo">Category:\nType:\nDifficulty:</string>
+    <string name="get_started_text">Welcome to QuizWiz\nChallenge your knowledge and take quiz of your own field of interest</string>
+    <string name="forgot_password_msg">Don\'t worry! it happens. Please enter the email address associated with your account.</string>
+    <string name="on_submit_msg">Check out your mailbox, you will receive an email containing link where you can reset your password</string>
+</resources>
