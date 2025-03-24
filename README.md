@@ -21,6 +21,6 @@
 
 
 About App:
-QuizWiz is an online quiz app developed by Rohit using the Open Trivia DB API. It features over 7,000 trivia questions, allowing users to compete for leaderboard positions by scoring high. The app provides a highly customizable quiz experience, enabling players to choose from 20+ categories, 2 question types (multiple choice or true/false), and 3 difficulty levels (easy, medium, hard).
+QuizZone is an online quiz app developed by Rohit using the Open Trivia DB API. It features over 7,000 trivia questions, allowing users to compete for leaderboard positions by scoring high. The app provides a highly customizable quiz experience, enabling players to choose from 20+ categories, 2 question types (multiple choice or true/false), and 3 difficulty levels (easy, medium, hard).
 
-The app is built using Firebase for authentication, Firestore for database management, storage for user data, and cloud functions for seamless app operations. The user-friendly interface ensures a fun and competitive environment for players while maintaining secure and efficient data handling. QuizWiz is designed to engage trivia enthusiasts of all levels with its diverse features and robust architecture.
+The app is built using Firebase for authentication, Firestore for database management, storage for user data, and cloud functions for seamless app operations. The user-friendly interface ensures a fun and competitive environment for players while maintaining secure and efficient data handling. QuizZone is designed to engage trivia enthusiasts of all levels with its diverse features and robust architecture.
